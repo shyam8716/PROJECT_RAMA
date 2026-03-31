@@ -1,0 +1,451 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Hospital.css">
+    </head>
+    <title>TRYING TO BUILT A HOSPITAL FORM</title>
+    <body bgcolor=" Tangerine">
+        <style>
+            .FULL_NAME{
+    color: darkred;
+    letter-spacing: auto;
+    text-align: auto;
+    line-height: auto;
+    text-decoration: darkred;
+    text-transform: auto;
+    border: auto;
+    font-family: auto;
+    font-size: auto;
+    font-weight: auto;
+    margin: auto;
+    padding: auto;
+
+}
+.DATE_OF_BIRTH{
+        color:darksalmon;
+        letter-spacing: 1pt;
+        text-align:center;
+        line-height:1%;
+        text-decoration:darksalmon;
+        text-transform:capitalize;
+        border:1cap;
+        font-family: monospace;
+        font-size:large;
+        font-weight:100;
+        margin:1%;
+        padding:1%;
+    }
+.GENDER{
+    color:darkseagreen;
+    letter-spacing: 2cap;
+    text-decoration: darkseagreen;
+    text-align: end;
+    line-height: 2cap;
+    text-transform: lowercase;
+    border: 2ch;
+    font-family:  Courier;
+    font-size: larger;
+    font-weight: 200;
+    margin: 2cap;
+    padding: 2cap;
+}
+.CONTACT_NUMBER{
+    color: darkslateblue;
+    letter-spacing: 3ch;
+    text-decoration: darkslateblue;
+    text-align: justify;
+    line-height: 3ch;
+    border: 3cm;
+    font-family: 'Courier New';
+    font-size: medium;
+    font-weight: 300;
+    margin: 3ch;
+    padding: 3ch;
+}
+.E_MAIL_ADDRESS{
+    color: darkturquoise;
+    letter-spacing: 4cm;
+    text-decoration: darkturquoise;
+    text-align: left;
+    line-height: 4cm;
+    border: 4cqb;
+    font-family:  sans-serif;
+    font-size: small;
+    font-weight: 400;
+    margin: 4cm;
+    padding: 4cm;
+}
+.ADDRESS{
+    color: darkviolet;
+    letter-spacing: 5cqb;
+    text-decoration: darkviolet;
+    text-align: right;
+    line-height: 5cqb;
+    border: 5cqh;
+    font-family:  Arial;
+    font-size: smaller;
+    font-weight: 500;
+    margin: 5cqb;
+    padding: 5cqb;
+}
+.EMERGANCY_CONTACT_NUMBER{
+    color: deeppink;
+    letter-spacing: 6cqh;
+    text-decoration: deeppink;
+    text-align: start;
+    line-height: 6cqh;
+    border:6cqi;
+    font-family:  'Arial Narrow';
+    font-size: x-large;
+    font-weight: 600;
+    margin: 6cqh;
+    padding: 6cqh;
+}
+.HOTEL_FACILITY_NAME{
+    color: deepskyblue;
+    letter-spacing:7cqi;
+    text-decoration: deepskyblue;
+    text-align: inherit;
+    line-height: 7cqi;
+    border: 7cqmax;
+    font-family: 'Franklin Gothic Medium';
+    font-size: x-small;
+    font-weight: 700;
+    margin: 7cqi;
+    padding: 7cqi;
+}
+.CHECK_IN_DATE{
+    color: dimgray;
+    letter-spacing: 8cqmax;
+    text-decoration: dimgray;
+    text-align: initial;
+    line-height: 8cqmax;
+    border: 8cqmin;
+    font-family:  sans-serif;
+    font-weight:800;
+    margin:8cqmax;
+    padding: 8cqmax;
+}
+.CHECK_OUT_DATE{
+    color: dodgerblue;
+    letter-spacing:9cqmin;
+    text-decoration: dodgerblue;
+    text-align: unset;
+    line-height: 9cqmin;
+    border:9cqw;
+    font-family:  'Trebuchet MS';
+    font-weight: 900;
+    margin: 9cqmin;
+    padding: 9cqmin;
+}
+.ROOM_TYPE{
+    color:firebrick;
+    letter-spacing: 10cqw;
+    text-decoration: firebrick;
+    text-align:unset;
+    line-height: 10cqw;
+    border: 10dvb;
+    font-family:  Calibri;
+    font-weight: bold;
+    margin: 10cqw;
+    padding: 10cqw;
+}
+.ADDITIONAL_SERVICE_REQUIRED{
+    color: floralwhite;
+    letter-spacing:11dvb;
+    text-decoration: floralwhite;
+    text-align: initial;
+    line-height: 11dvb;
+    border:11dvh;
+    font-family: 'Gill Sans MT';
+    margin: 11dvb;
+    padding: 11dvb;
+}
+.SPECIAL_REQUESTS{
+    color: forestgreen;
+    letter-spacing: 12dvh;
+    text-decoration: forestgreen;
+    text-align: inherit;
+    line-height: 12dvh;
+    border: 12dvi;
+    font-family: 'Gill Sans';
+    margin: 12dvh;
+    padding: 12dvh;
+}
+.PATIENT_ID_IF_APEPLICABL{
+    color: fuchsia;
+    letter-spacing: 13dvi;
+    text-decoration: fuchsia;
+    text-align:start;
+    line-height: 13dvi;
+    border: 13dvw;
+    font-family: sans-serif;
+    margin: 13dvi;
+    padding: 13dvi;
+}
+.Primary_Physician{
+    color: gainsboro;
+    letter-spacing: 14dvw;
+    text-decoration: gainsboro;
+    text-align: right;
+    line-height: 14dvw;
+    border: 14em;
+    font-family: Verdana;
+    margin: 14dvw;
+    padding: 14dvw;
+}
+.Blood_Group{
+    color: ghostwhite;
+    letter-spacing: 15em;
+    text-decoration: ghostwhite;
+    text-align: left;
+    line-height: 15em;
+    border:15ex;
+    font-family:'Lucida Sans Unicode';
+    margin: 15em;
+    padding: 15em;
+}
+.Known_Allergies{
+    color: gold;
+    letter-spacing: 16ex;
+    text-decoration:gold;
+    text-align:justify;
+    line-height: 16ex;
+    border: 16rex;
+    font-family:'Lucida Grande';
+    margin: 16ex;
+    padding: 16ex;
+}
+.Existing_Medical_Conditions{
+    color:goldenrod;
+    letter-spacing:17fr;
+    text-decoration: goldenrod;
+    text-align:end;
+    line-height:17fr;
+    border:17ric;
+    font-family:'Lucida Sans Regular';
+    margin:17fr;
+    padding:17fr;
+}
+.Previous_Surgeries_if_any{
+    color: gray;
+    letter-spacing:18ic;
+    text-decoration: gray;
+    text-align: center;
+    line-height:18ic;
+    border:18rlh;
+    font-family: 'Lucida Sans';
+    margin:18ic;
+    padding:18ic;
+}
+.Current_Medications{
+    color: green;
+    letter-spacing:19in;
+    text-decoration: green;
+    text-align: center;
+    line-height:19in;
+    border:19svb;
+    font-family:sans-serif;
+    margin:19in;
+    padding:19in;
+}
+.Medical_Test_Lab_Request{
+    color: greenyellow;
+    letter-spacing: 20lh;
+    text-decoration: greenyellow;
+    text-align: end;
+    line-height: 20lh;
+    border: 20svh;
+    font-family:Verdana;
+    margin: 20lh;
+    padding: 20lh;
+}
+.Blood_Donation_Consent{
+    color: grey;
+    letter-spacing: 21lvb;
+    text-decoration: grey;
+    text-align: justify;
+    line-height: 21lvb;
+    border:21svi;
+    font-family:Geneva;
+    margin: 21lvb;
+    padding: 21lvb;
+}
+.Vaccination_Request{
+    color: honeydew;
+    letter-spacing: 22lvi;
+    text-decoration: honeydew;
+    text-align: left;
+    line-height: 22lvi;
+    border: 22svw;
+    font-family:Tahoma;
+    margin: 22lvi;
+    padding: 22lvi;
+}
+.Equipment_Request{
+    color: hotpink;
+    letter-spacing: 23lvw;
+    text-decoration: hotpink;
+    text-align: right;
+    line-height: 23lvw;
+    border: 23vb;
+    font-family:'Segoe UI';
+    margin: 23lvw;
+    padding: 23lvw;
+}
+.Hospital_Infrastructure_Feedback{
+    color: indianred;
+    letter-spacing: 24mm;
+    text-decoration: indianred;
+    text-align: start;
+    line-height: 24mm;
+    border:24vh;
+    font-family:serif;
+    margin: 24mm;
+    padding: 24mm;
+}
+.Staff_Performance_Feedback{
+    color: indigo;
+    letter-spacing: 25pc;
+    text-decoration: indigo;
+    text-align: inherit;
+    line-height: 25pc;
+    border:25vi;
+    font-family:Times;
+    margin: 25pc;
+    padding: 25pc;
+}
+.Final_Confirmation_Signature{
+    color: inherit;
+    letter-spacing: 26pt;
+    text-decoration: inherit;
+    text-align: initial;
+    line-height: 26pt;
+    border: 26vmax;
+    font-family:'Times New Roman';
+    margin: 26pt;
+    padding: 26pt;
+}
+        </style>
+        <div class="FULL_NAME">enter your full name:<input type="text"name="FULL_NAME">
+        <input type="submit">
+        </div>
+          <div class="DATE_OF_BIRTH">enter your date of birth:<input type="datetime-local"FULL_NAME">
+         <input type="submit">
+         </div>
+         <div class="GENDER">enter your gender:
+            male<input type="radio"name="male"><br/>
+            female<input type="radio"name="female"><br/>
+            others<input type="radio"name="others">
+            <input type="submit">
+         </div>
+        <div class="CONTACT_NUMBER">enter your  contact number:<input type="number"name="CONTACT_NUMBER">
+            <input type="submit">
+        </div>
+        <div class="E_MAIL ADDRESS">enter your  e-mail address:<input type="email"name="E_MAIL_ADDRESS">
+            <input type="submit">
+        </div>
+        <div class="ADDRESS">enter your   address:<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="EMERGANCY_CONTACT_NUMBER">enter your  emergency contact number:<input type="number"name="CONTACT_NUMBER">
+            <input type="submit">
+        </div>
+        <div class="HOTEL_FACILITY_NAME">enter your   hotel/facility name:<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="CHECK_IN_DATE">enter check in date:<input type="date"name="CHECK_IN_DATE">
+            <input type="submit">
+        </div>
+        <div class="CHECK_OUT_DATE">enter check out date:<input type="date"name="CHECK_OUT_DATE">
+            <input type="submit">
+        </div>
+        <div class="ROOM_TYPE">enter your room-type:
+            Single<input type="checkbox"name="Single"><br/>
+            double<input type="checkbox"name="double"><br/>
+            Suite<input type="checkbox"name=" Suite">
+            <input type="submit">
+        </div>
+        <div class="ADDITIONAL_SERVICE_REQUIRED">enter your additional sercice required:
+            Wi-Fi <input type="checkbox"name="Wi-Fi "><br/>
+            Breakfast<input type="checkbox"name=" Breakfast"><br/>
+            Airport Pickup<input type="checkbox"name=" Airport Pickup">
+            <input type="submit">
+        </div>
+        <div class="SPECIAL_REQUESTS">enter your special requests:<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="PATIENT_ID_IF_APEPLICABL">enter your patiend id (if applicable):<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="Primary_Physician">enter your Primary Physician:<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="Blood_Group">enter your blood group:
+            A <input type="checkbox"name="A"><br/>
+            B<input type="checkbox"name="B"><br/>
+            AB<input type="checkbox"name="  AB"><br/>
+            O<input type="checkbox"name="O"><br/>
+            Unknown<input type="checkbox"name="Unknown"><br/>
+            <input type="submit">
+        </div>
+        <div class="Known_Allergies">enter your known_allergies:<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="Existing_Medical_Conditions">enter your Existing Medical Conditions::
+            Diabetes<input type="checkbox"name="Diabetes"><br/>
+            Hypertension<input type="checkbox"name="Hypertension"><br/>
+            Asthma<input type="checkbox"name="Asthma"><br/>
+            Other<input type="checkbox"name="Other"><br/>
+            <input type="submit">
+        </div>
+       <div class="Previous_Surgeries_if_any">enter your Previous Surgeries(if any)<textarea rows="4" cols="50" max length="20"></textarea>
+         <input type="submit">
+        </div>
+        <div class="Current_Medications">enter your Current_Medications:<textarea rows="4" cols="50" max length="20"></textarea>
+            <input type="submit">
+        </div>
+        <div class="Medical_Test_Lab_Request">enter your Medical Test/Lab Request:
+            Blood Test<input type="checkbox"name=" Blood Test"><br/>
+            X-ray<input type="checkbox"name=" X-ray"><br/>
+            MRI<input type="checkbox"name=" MRI"><br/>
+            Other<input type="checkbox"name="Other"><br/>
+            <input type="submit">
+        </div>
+        <div class="Blood_Donation_Consent">enter your Blood Donation Consent:
+            Yes<input type="radio"name="Yes"><br/>
+            No<input type="radio"name="No"><br/>
+        </div>
+        <div class="Vaccination_Request">enter your Vaccination Request:
+            COVID-19<input type="checkbox"name="  COVID-19"><br/>
+            Hepatitis<input type="checkbox"name=" Hepatitis"><br/>
+            Flu<input type="checkbox"name="  Flu"><br/>
+            Other<input type="checkbox"name="Other"><br/>
+            <input type="submit">
+        </div>
+        <div class="Equipment_Request">enter your Equipment Request:
+            Wheelchair<input type="checkbox"name="Wheelchair"><br/>
+            Oxygen Cylinder<input type="checkbox"name="Oxygen Cylinder"><br/>
+            Other<input type="checkbox"name="Other"><br/>
+            <input type="submit">
+        </div>
+        <div class="Hospital_Infrastructure_Feedback">enter your Hospital Infrastructure Feedback:
+            Excellent<input type="radio"name=" Excellent"><br/>
+            Good<input type="radio"name=" Good"><br/>
+            Needs Improvement<input type="radio"name=" Needs Improvement"><br/>
+            <input type="submit">
+        </div>
+        <div class="Staff_Performance_Feedback">enter your Staff_Performance_Feedback:
+            Excellent<input type="radio"name=" Excellent"><br/>
+            Good<input type="radio"name=" Good"><br/>
+            Needs Improvement<input type="radio"name=" Needs Improvement"><br/>
+            <input type="submit">
+        </div>
+        <div class=" Final_Confirmation_Signature">enter your  Final Confirmation & Signature:
+            <textarea rows="4" cols="50" max length="50">
+            </textarea><br/>
+            <input type="file">enter your signature <br/>
+            <input type="date">enter date<br/>
+            <input type="submit">
+        </div>
+    </body>
+</html>
