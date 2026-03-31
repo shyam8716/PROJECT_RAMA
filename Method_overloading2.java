@@ -44,10 +44,6 @@ public class Method_overloading2 {
         System.out.println("The company location is: Tirupati");
         System.out.println("The company CEO IS: Bhanu prakash");
     }
-    /*20.Create a program for Vehicle Information System using method overloading*/
-    public String vehicle_details(String vehicle_name,String vehicle_model,String vehicle_type,int vehicle_price){
-        return "The vehicle name is: "+vehicle_name+"\n The vehicle model is: "+vehicle_type+"\n The vehicle price is"+vehicle_price;
-    }
     public static void main(String[] args) {
         Method_overloading2 product=new Method_overloading2();
         product.product_details();
@@ -67,7 +63,5 @@ public class Method_overloading2 {
         System.out.println("The total number of students are: "+school.school_details(25,45));
         Method_overloading2 company=new Method_overloading2();
         company.technology_company();
-        Method_overloading2 vehicle=new Method_overloading2();
-        System.out.println(vehicle.vehicle_details("toyota", "camry", "sedan", 200000));
      }
 }
